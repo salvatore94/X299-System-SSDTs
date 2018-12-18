@@ -1,21 +1,24 @@
 # X299-System-SSDTs
 
 ## Instructions
+This X299 System SSDT Github repository is a fork of the great collection made by KGP and others osx86's community.
+The aim of this repository is to record changes needed to adapt KGP's collection to my specific motherboard.
 
-This X299 System SSDT Github repository constitutes a set of motherboard and PCIe-Slot specific system SSDTs for the ASUS Prime X299 Deluxe. Users of different motherboards and/or different PCIe-Slot populations have to adopt at least the ACPI path and ACPI replacments implemented in each specfic file. 
+The orginal collection is avaiable on [KGP's repository](https://github.com/KGP/X299-System-SSDTs) 
 
-How to do so, is explained wihtin this small and basic guideline:
-http://kgp-hackintosh-corner.com/how-to-create-or-modify-a-simple-system-ssdt-aml-by-means-of-dsdt-and-ioreg-acpi-information
+Is possible to downlaod a DSL version of the respective AML files under "Sources" and to subseqeuntly execute the Compile.command from terminal
 
-In general it is recommended to directly use or modify/adopt the ready-to-use AML files under "Distribution".
 
-However it is also possible to downlaod a DSL version of the respective AML files under "Sources"
-and to subseqeuntly execute the `Compile.command` from terminal; However, compilation errors (DSL to AML conversion errors) induced by the MaciASL compiler cannot be excluded in this case. 
+## My System 
+| | |
+| :------- | :---------- |
+| Motherboard | `Asus X299A-Prime` |
+| Graphics Card | `Gainward GTX 1080` |
 
 
 ## SSDTs
 
-Collection of X299 System `SSDTs` for the ASUS Prime X299 Deluxe.
+Collection of X299 System `SSDTs` for the X299 motherboards.
 
 | AML File | Description |
 | :------- | :---------- |
@@ -27,18 +30,8 @@ Collection of X299 System `SSDTs` for the ASUS Prime X299 Deluxe.
 | `SSDT-X299-USBX.aml` | Fixes USB Power Errors during system boot |
 | `SSDT-X299-XHCI.aml` | On-board ASM1074 USB3.0 extensible Host Controller XHCI PCI implementation |
 | `SSDT-X299-XHC.aml` | On-board ASN3142#1, ASN3142#2 and ASN3142#3 USB3.1 extensible Host Controller XHC2, XHC3 and XHC4 PCI implementation |
-| `SSDT-X299-ETH.aml` | On-board Intel I219V2 and I211VA 1GB NIC controlller PCI implementation |
-| `SSDT-X299-Vega-Frontier.aml` | AMD Radeon RX Vega Frontier PCIe Slot-1 GFX0 and HDAU PCI implementation |
-| `SSDT-X299-Vega64.aml` | AMD Radeon RX Vega 64 PCIe Slot-1 GFX0 and HDAU PCI implementation (Sapphire Nitro+ RX Vega 64)  |
-| `SSDT-X299-Vega56.aml` | AMD Radeon RX Vega 56 PCIe Slot-1 GFX0 and HDAU PCI implementation (MSI RX VEGA 56 Air Boost OC |
-| `SSDT-X299-RX580.aml` | AMD Radeon RX 580 PCIe Slot-1 GFX0 and HDAU PCI implementation |
-| `SSDT-X299-RX560.aml` | AMD Radeon RX 560 PCIe Slot-1 GFX0 and HDAU PCI implementation |
+| `SSDT-X299-ETH.aml` | On-board Intel I219V2 1GB NIC controlller PCI implementation |
 | `SSDT-X299-Nvidia.aml` | Nvidia PCIe Slot-1 GFX0 and HDAU PCI implementation |
-| `SSDT-X299-ARPT.aml` | OSXWIFI Broadcom BCM94360CD BT/WIFI PCIe Slot-3 ARPT PCI implementation |
-| `SSDT-X299-TB3HP.aml` | GC-Titan Ridge/GC-Alpine Ridge/ASUS TBEX 3 TB3/USB-C Hotplug Injector Slot-4 PCI implementation |
-| `SSDT-X299-ACQU.aml` | Acquantia AQC107-AFW 10GB NIC PCIe Slot-6 XGBE PCI implementation |
-| `SSDT-X299-X540-T1.aml` | Intel X540-T1 10GB NIC PCIe Slot-6 XGBE PCI implementation |
-| `SSDT-X299-P2EI0G-2T.aml` | Small-Tree P2EI0G-2T 10GB NIC PCIe Slot-6 XGBE and XGBF PCI implementations |
 | `SSDT-DTPG.aml` | DTPG PCI implementation (required for all `SSDTs` listed above) |
 
 ## Required Patches
@@ -63,5 +56,3 @@ The `SSDTs` above require the following `config.plist` ACPI DSDT patch replaceme
 ## Acknowledgements
 
 Special thanks to Apfelnico and NMano for all substantial and always kind contributions.
-
-Partial contributions of Mork vom Ork, Matthew82, Maleorderbridge, TheRacerMaster, Crismac2013 and LeleTuratti to `SSDT-X299-TB3HP.aml` might also be mentioned in addition.

@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ./SSDT-X299-THSS.aml, Thu Sep 27 14:54:54 2018
+ * Disassembly of ./SSDT-X299-THSS.aml, Tue Dec 18 16:10:36 2018
  *
  * Original Table Header:
  *     Signature        "SSDT"

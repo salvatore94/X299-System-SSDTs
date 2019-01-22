@@ -5,18 +5,18 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Users/salvatore/Desktop/SSDT-3-PtidDevc.aml, Tue Dec 18 19:40:17 2018
+ * Disassembly of /Users/salvatore/Desktop/SSDT-PtidDevc-X299A.aml, Wed Dec 19 14:47:31 2018
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00003002 (12290)
+ *     Length           0x0000295D (10589)
  *     Revision         0x02
- *     Checksum         0xD4
+ *     Checksum         0x2C
  *     OEM ID           "INTEL "
  *     OEM Table ID     "PtidDevc"
  *     OEM Revision     0x00001000 (4096)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20160422 (538313762)
+ *     Compiler Version 0x20180810 (538445840)
  */
 DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 {
@@ -25,94 +25,93 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
     External (_PR_.DTS3, UnknownObj)
     External (_PR_.DTS4, UnknownObj)
     External (_PR_.PDTS, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1CI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1DC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1DI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1FC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1FV, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B1RC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2CI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2DI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2FC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2FV, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2MH, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2ML, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.B2RC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.BMAX, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.CFS2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.CFSP, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.CMDR, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.CPAP, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.CPUP, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.ECAV, IntObj)
-    External (_SB_.PCI0.LPCB.H_EC.ECMD, MethodObj)    // 1 Arguments
-    External (_SB_.PCI0.LPCB.H_EC.ECRD, MethodObj)    // 1 Arguments
-    External (_SB_.PCI0.LPCB.H_EC.ECWT, MethodObj)    // 2 Arguments
-    External (_SB_.PCI0.LPCB.H_EC.GTVR, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MCPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MCTD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MDT0, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MFSP, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MGPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MGTD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MMPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MMTL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.MPOL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NCPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NCTD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NGPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NGTD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NMTL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.NPOL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PCAD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PDT0, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PDT1, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PDT2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PDT3, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEC0, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEC1, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEC2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEC3, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PECC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PECD, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PECH, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PECI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEHI, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PENV, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEPM, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PEWL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PLAP, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PMAX, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PPDT, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PPWR, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRCS, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRFC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRS0, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRS1, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRS2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRS3, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PRS4, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PWFC, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.PWRL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER1, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER3, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER4, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER5, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TER6, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TMPL, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR1, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR2, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR3, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR4, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR5, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR6, UnknownObj)
-    External (_SB_.PCI0.LPCB.H_EC.TSR7, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1CI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1DC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1DI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1FC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1FV, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B1RC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2CI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2DI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2FC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2FV, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2MH, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2ML, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.B2RC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.BMAX, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.CFS2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.CFSP, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.CMDR, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.CPAP, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.CPUP, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.ECAV, IntObj)
+    External (_SB_.PCI0.LPCB.EC.ECMD, MethodObj)    // 1 Arguments
+    External (_SB_.PCI0.LPCB.EC.ECRD, MethodObj)    // 1 Arguments
+    External (_SB_.PCI0.LPCB.EC.ECWT, MethodObj)    // 2 Arguments
+    External (_SB_.PCI0.LPCB.EC.GTVR, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MCPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MCTD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MDT0, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MFSP, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MGPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MGTD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MMPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MMTL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.MPOL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NCPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NCTD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NGPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NGTD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NMTL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.NPOL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PCAD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PDT0, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PDT1, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PDT2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PDT3, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEC0, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEC1, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEC2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEC3, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PECC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PECD, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PECH, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PECI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEHI, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PENV, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEPM, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PEWL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PLAP, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PMAX, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PPDT, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PPWR, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRCS, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRFC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRS0, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRS1, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRS2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRS3, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PRS4, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PWFC, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.PWRL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER1, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER3, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER4, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER5, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TER6, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TMPL, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR1, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR2, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR3, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR4, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR5, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR6, UnknownObj)
+    External (_SB_.PCI0.LPCB.EC.TSR7, UnknownObj)
     External (_TZ_.TZ00._TMP, UnknownObj)
     External (_TZ_.TZ01._TMP, UnknownObj)
     External (PAMT, UnknownObj)
-    //External (TSDB, UnknownObj)
 
     Scope (\_SB)
     {
@@ -124,11 +123,6 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
             Name (_STA, 0x0F)  // _STA: Status
             Method (TSDL, 0, NotSerialized)
             {
-//                If ((TSDB == One))
-//                {
-//                    Return (TSD2) /* \_SB_.PTID.TSD2 */
-//                }
-
                 Return (TSD1) /* \_SB_.PTID.TSD1 */
             }
 
@@ -255,11 +249,6 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
             })
             Method (OSDL, 0, NotSerialized)
             {
-//                If ((TSDB == One))
-//                {
-//                    Return (OSD2) /* \_SB_.PTID.OSD2 */
-//                }
-
                 Return (OSD1) /* \_SB_.PTID.OSD1 */
             }
 
@@ -269,7 +258,7 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                 "CPU Fan Duty Cycle", 
                 "RAW", 
                 0x04, 
-                "CPU Fan #1 Speed", 
+                "CPU Fan Speed", 
                 "RPM", 
                 0x03, 
                 "Skin Temp 0", 
@@ -293,7 +282,7 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                 "CPU Fan Duty Cycle", 
                 "RAW", 
                 0x04, 
-                "CPU Fan #1 Speed", 
+                "CPU Fan Speed", 
                 "RPM", 
                 0x03, 
                 "Skin Temp 0", 
@@ -566,66 +555,6 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 
             Method (TSDD, 0, Serialized)
             {
-//                If ((TSDB == One))
-//                {
-//                    Name (TMPX, Package (0x13)
-//                    {
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000, 
-//                        0x80000000
-//                    })
-//                    TMPX [Zero] = ((\_PR.DTS1 * 0x0A) + 0x0AAC)
-//                    TMPX [One] = ((\_PR.DTS2 * 0x0A) + 0x0AAC)
-//                    TMPX [0x02] = ((\_PR.DTS3 * 0x0A) + 0x0AAC)
-//                    TMPX [0x03] = ((\_PR.DTS4 * 0x0A) + 0x0AAC)
-//                    TMPX [0x04] = ((\_PR.PDTS * 0x0A) + 0x0AAC)
-//                    If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
-//                    {
-//                        TMPX [0x05] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR1)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x06] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR2)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x07] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR3)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x08] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR4)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x09] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PMAX)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x0A] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PPDT)) * 0x0A) + 
-//                            0x0AAC)
-//                        TMPX [0x0B] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PECH)) * 0x0A) + 
-//                            0x0AAC)
-//                    }
-
-//                    TMPX [0x0D] = \_TZ.TZ00._TMP /* External reference */
-//                    If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
-//                    {
-//                        TMPX [0x0E] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER1)) << 0x02))
-//                        TMPX [0x0F] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER2)) << 0x02))
-//                        TMPX [0x10] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER3)) << 0x02))
-//                        TMPX [0x11] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER4)) << 0x02))
-//                        TMPX [0x12] = XSDS ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER5)) << 0x02))
-//                    }
-
-//                    Return (TMPX) /* \_SB_.PTID.TSDD.TMPX */
-//                }
-
                 Name (TMPV, Package (0x14)
                 {
                     0x80000000, 
@@ -654,34 +583,26 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                 TMPV [0x02] = ((\_PR.DTS3 * 0x0A) + 0x0AAC)
                 TMPV [0x03] = ((\_PR.DTS4 * 0x0A) + 0x0AAC)
                 TMPV [0x04] = ((\_PR.PDTS * 0x0A) + 0x0AAC)
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    TMPV [0x05] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR1)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x06] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR2)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x07] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR3)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x08] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR4)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x09] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR5)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x0A] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PMAX)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x0B] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PPDT)) * 0x0A) + 
-                        0x0AAC)
-                    TMPV [0x0C] = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PECH)) * 0x0A) + 
-                        0x0AAC)
+                    TMPV [0x05] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR1)) * 0x0A) + 0x0AAC)
+                    TMPV [0x06] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR2)) * 0x0A) + 0x0AAC)
+                    TMPV [0x07] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR3)) * 0x0A) + 0x0AAC)
+                    TMPV [0x08] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR4)) * 0x0A) + 0x0AAC)
+                    TMPV [0x09] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR5)) * 0x0A) + 0x0AAC)
+                    TMPV [0x0A] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PMAX)) * 0x0A) + 0x0AAC)
+                    TMPV [0x0B] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PPDT)) * 0x0A) + 0x0AAC)
+                    TMPV [0x0C] = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PECH)) * 0x0A) + 0x0AAC)
                 }
 
                 TMPV [0x0E] = \_TZ.TZ00._TMP /* External reference */
                 TMPV [0x0F] = \_TZ.TZ01._TMP /* External reference */
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    TMPV [0x10] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER1)) << 0x02))
-                    TMPV [0x11] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER2)) << 0x02))
-                    TMPV [0x12] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER3)) << 0x02))
-                    TMPV [0x13] = XLAT ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER4)) << 0x02))
+                    TMPV [0x10] = XLAT ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER1)) << 0x02))
+                    TMPV [0x11] = XLAT ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER2)) << 0x02))
+                    TMPV [0x12] = XLAT ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER3)) << 0x02))
+                    TMPV [0x13] = XLAT ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER4)) << 0x02))
                 }
 
                 Return (TMPV) /* \_SB_.PTID.TSDD.TMPV */
@@ -709,36 +630,36 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                     0x80000000, 
                     0x80000000
                 })
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    PWRV [Zero] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.CPUP))
-                    PWRV [One] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PPWR)) * 0x0A)
-                    PWRV [0x02] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.CPAP))
-                    PWRV [0x03] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PLAP)) * 0x0A)
-                    PWRV [0x04] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1DC))
-                    PWRV [0x05] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1RC))
-                    PWRV [0x06] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1FC))
-                    PWRV [0x07] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1FV))
-                    PWRV [0x08] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1DI))
-                    PWRV [0x09] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B1CI))
-                    PWRV [0x0A] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2RC))
-                    PWRV [0x0B] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2FC))
-                    PWRV [0x0C] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2FV))
-                    PWRV [0x0D] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2DI))
-                    PWRV [0x0E] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2CI))
-                    Local0 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.BMAX))
+                    PWRV [Zero] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.CPUP))
+                    PWRV [One] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PPWR)) * 0x0A)
+                    PWRV [0x02] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.CPAP))
+                    PWRV [0x03] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PLAP)) * 0x0A)
+                    PWRV [0x04] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1DC))
+                    PWRV [0x05] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1RC))
+                    PWRV [0x06] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1FC))
+                    PWRV [0x07] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1FV))
+                    PWRV [0x08] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1DI))
+                    PWRV [0x09] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B1CI))
+                    PWRV [0x0A] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2RC))
+                    PWRV [0x0B] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2FC))
+                    PWRV [0x0C] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2FV))
+                    PWRV [0x0D] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2DI))
+                    PWRV [0x0E] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2CI))
+                    Local0 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.BMAX))
                     If (Local0)
                     {
                         Local0 = ~Local0 |= 0xFFFF0000
-                        Local0 = (Local0 += One * 0x0A)
+                        Local0 = Local0 += 0x0A
                     }
 
                     PWRV [0x0F] = Local0
-                    Local0 = ((\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2MH)) << 0x08) + \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.B2ML)))
+                    Local0 = ((\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2MH)) << 0x08) + \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.B2ML)))
                     If (Local0)
                     {
                         Local0 = ~Local0 |= 0xFFFF0000
-                        Local0 = (Local0 += One * 0x0A)
+                        Local0 = Local0 += 0x0A
                     }
 
                     PWRV [0x10] = Local0
@@ -749,32 +670,8 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 
             Method (OSDD, 0, Serialized)
             {
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-//                    If ((TSDB == One))
-//                    {
-//                        Name (OSD2, Package (0x08)
-//                        {
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000, 
-//                            0x80000000
-//                        })
-//                        OSD2 [Zero] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PENV))
-//                        OSD2 [One] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.CFSP))
-//                        OSD2 [0x02] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR3))
-//                        OSD2 [0x03] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER1)) << 0x02)
-//                        OSD2 [0x04] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER2)) << 0x02)
-//                        OSD2 [0x05] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER3)) << 0x02)
-//                        OSD2 [0x06] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER4)) << 0x02)
-//                        OSD2 [0x07] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER5)) << 0x02)
-//                        Return (OSD2) /* \_SB_.PTID.OSDD.OSD2 */
-//                    }
-
                     Name (OSD1, Package (0x07)
                     {
                         0x80000000, 
@@ -785,13 +682,13 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                         0x80000000, 
                         0x80000000
                     })
-                    OSD1 [Zero] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PENV))
-                    OSD1 [One] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.CFSP))
-                    OSD1 [0x02] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TSR3))
-                    OSD1 [0x03] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER1)) << 0x02)
-                    OSD1 [0x04] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER2)) << 0x02)
-                    OSD1 [0x05] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER3)) << 0x02)
-                    OSD1 [0x06] = (\_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.TER4)) << 0x02)
+                    OSD1 [Zero] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PENV))
+                    OSD1 [One] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.CFSP))
+                    OSD1 [0x02] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TSR3))
+                    OSD1 [0x03] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER1)) << 0x02)
+                    OSD1 [0x04] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER2)) << 0x02)
+                    OSD1 [0x05] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER3)) << 0x02)
+                    OSD1 [0x06] = (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.TER4)) << 0x02)
                     Return (OSD1) /* \_SB_.PTID.OSDD.OSD1 */
                 }
 
@@ -842,28 +739,28 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
             Method (RPMD, 0, Serialized)
             {
                 Name (MTMP, Buffer (0x1A){})
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    MTMP [0x06] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PCAD))
-                    MTMP [0x07] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEWL))
-                    MTMP [0x08] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PWRL))
-                    MTMP [0x09] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PECD))
-                    MTMP [0x0A] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEHI))
-                    MTMP [0x0B] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PECI))
-                    MTMP [0x0C] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEPL))
-                    MTMP [0x0D] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEPM))
-                    MTMP [0x0E] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PWFC))
-                    MTMP [0x0F] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PECC))
-                    MTMP [0x10] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PDT0))
-                    MTMP [0x11] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PDT1))
-                    MTMP [0x12] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PDT2))
-                    MTMP [0x13] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PDT3))
-                    MTMP [0x14] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRFC))
-                    MTMP [0x15] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRS0))
-                    MTMP [0x16] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRS1))
-                    MTMP [0x17] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRS2))
-                    MTMP [0x18] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRS3))
-                    MTMP [0x19] = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRS4))
+                    MTMP [0x06] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PCAD))
+                    MTMP [0x07] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEWL))
+                    MTMP [0x08] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PWRL))
+                    MTMP [0x09] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PECD))
+                    MTMP [0x0A] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEHI))
+                    MTMP [0x0B] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PECI))
+                    MTMP [0x0C] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEPL))
+                    MTMP [0x0D] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEPM))
+                    MTMP [0x0E] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PWFC))
+                    MTMP [0x0F] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PECC))
+                    MTMP [0x10] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PDT0))
+                    MTMP [0x11] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PDT1))
+                    MTMP [0x12] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PDT2))
+                    MTMP [0x13] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PDT3))
+                    MTMP [0x14] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRFC))
+                    MTMP [0x15] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRS0))
+                    MTMP [0x16] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRS1))
+                    MTMP [0x17] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRS2))
+                    MTMP [0x18] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRS3))
+                    MTMP [0x19] = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRS4))
                 }
 
                 Return (MTMP) /* \_SB_.PTID.RPMD.MTMP */
@@ -876,29 +773,29 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
                     Return (0xFFFFFFFF)
                 }
 
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x06]), RefOf (\_SB.PCI0.LPCB.H_EC.PCAD))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x07]), RefOf (\_SB.PCI0.LPCB.H_EC.PEWL))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x08]), RefOf (\_SB.PCI0.LPCB.H_EC.PWRL))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x09]), RefOf (\_SB.PCI0.LPCB.H_EC.PECD))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0A]), RefOf (\_SB.PCI0.LPCB.H_EC.PEHI))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0B]), RefOf (\_SB.PCI0.LPCB.H_EC.PECI))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0C]), RefOf (\_SB.PCI0.LPCB.H_EC.PEPL))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0D]), RefOf (\_SB.PCI0.LPCB.H_EC.PEPM))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0E]), RefOf (\_SB.PCI0.LPCB.H_EC.PWFC))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x0F]), RefOf (\_SB.PCI0.LPCB.H_EC.PECC))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x10]), RefOf (\_SB.PCI0.LPCB.H_EC.PDT0))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x11]), RefOf (\_SB.PCI0.LPCB.H_EC.PDT1))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x12]), RefOf (\_SB.PCI0.LPCB.H_EC.PDT2))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x13]), RefOf (\_SB.PCI0.LPCB.H_EC.PDT3))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x14]), RefOf (\_SB.PCI0.LPCB.H_EC.PRFC))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x15]), RefOf (\_SB.PCI0.LPCB.H_EC.PRS0))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x16]), RefOf (\_SB.PCI0.LPCB.H_EC.PRS1))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x17]), RefOf (\_SB.PCI0.LPCB.H_EC.PRS2))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x18]), RefOf (\_SB.PCI0.LPCB.H_EC.PRS3))
-                    \_SB.PCI0.LPCB.H_EC.ECWT (DerefOf (Arg0 [0x19]), RefOf (\_SB.PCI0.LPCB.H_EC.PRS4))
-                    \_SB.PCI0.LPCB.H_EC.ECMD (0x67)
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x06]), RefOf (\_SB.PCI0.LPCB.EC.PCAD))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x07]), RefOf (\_SB.PCI0.LPCB.EC.PEWL))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x08]), RefOf (\_SB.PCI0.LPCB.EC.PWRL))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x09]), RefOf (\_SB.PCI0.LPCB.EC.PECD))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0A]), RefOf (\_SB.PCI0.LPCB.EC.PEHI))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0B]), RefOf (\_SB.PCI0.LPCB.EC.PECI))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0C]), RefOf (\_SB.PCI0.LPCB.EC.PEPL))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0D]), RefOf (\_SB.PCI0.LPCB.EC.PEPM))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0E]), RefOf (\_SB.PCI0.LPCB.EC.PWFC))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x0F]), RefOf (\_SB.PCI0.LPCB.EC.PECC))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x10]), RefOf (\_SB.PCI0.LPCB.EC.PDT0))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x11]), RefOf (\_SB.PCI0.LPCB.EC.PDT1))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x12]), RefOf (\_SB.PCI0.LPCB.EC.PDT2))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x13]), RefOf (\_SB.PCI0.LPCB.EC.PDT3))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x14]), RefOf (\_SB.PCI0.LPCB.EC.PRFC))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x15]), RefOf (\_SB.PCI0.LPCB.EC.PRS0))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x16]), RefOf (\_SB.PCI0.LPCB.EC.PRS1))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x17]), RefOf (\_SB.PCI0.LPCB.EC.PRS2))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x18]), RefOf (\_SB.PCI0.LPCB.EC.PRS3))
+                    \_SB.PCI0.LPCB.EC.ECWT (DerefOf (Arg0 [0x19]), RefOf (\_SB.PCI0.LPCB.EC.PRS4))
+                    \_SB.PCI0.LPCB.EC.ECMD (0x67)
                 }
 
                 Return (Zero)
@@ -906,9 +803,9 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 
             Method (ISPC, 0, NotSerialized)
             {
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    \_SB.PCI0.LPCB.H_EC.ECMD (0x65)
+                    \_SB.PCI0.LPCB.EC.ECMD (0x65)
                 }
 
                 Return (Zero)
@@ -916,9 +813,9 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 
             Method (ENPC, 0, NotSerialized)
             {
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    \_SB.PCI0.LPCB.H_EC.ECMD (0x66)
+                    \_SB.PCI0.LPCB.EC.ECMD (0x66)
                 }
 
                 Return (Zero)
@@ -926,9 +823,9 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
 
             Method (RPCS, 0, NotSerialized)
             {
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    Local0 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PRCS))
+                    Local0 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PRCS))
                 }
 
                 Return (Local0)
@@ -937,15 +834,15 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "PtidDevc", 0x00001000)
             Method (RPEC, 0, NotSerialized)
             {
                 Local0 = Zero
-                If ((\_SB.PCI0.LPCB.H_EC.ECAV == One))
+                If ((\_SB.PCI0.LPCB.EC.ECAV == One))
                 {
-                    Local1 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEC0))
+                    Local1 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEC0))
                     Local0 |= Local1
-                    Local1 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEC1))
+                    Local1 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEC1))
                     Local0 |= (Local1 << 0x08)
-                    Local1 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEC2))
+                    Local1 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEC2))
                     Local0 |= (Local1 << 0x10)
-                    Local1 = \_SB.PCI0.LPCB.H_EC.ECRD (RefOf (\_SB.PCI0.LPCB.H_EC.PEC3))
+                    Local1 = \_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.PEC3))
                     Local0 |= (Local1 << 0x18)
                 }
 
